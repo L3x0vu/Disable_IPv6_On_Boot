@@ -1,0 +1,5 @@
+ui_print("Installing IPv6 disable script...");
+run_program("/system/bin/mkdir", "-p", "/data/adb/service.d");
+run_program("/system/bin/cp", "-f", "/service.d/disable_ipv6.sh", "/data/adb/service.d/disable_ipv6.sh");
+run_program("/system/bin/chmod", "755", "/data/adb/service.d/disable_ipv6.sh");
+ui_print("Done. IPv6 disable script installed.");
